@@ -1,0 +1,293 @@
+@font-face {
+    font-family: olifont;
+    src: url(Antreas.ttf);
+}
+
+* {
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #111111;
+}
+
+.daheader {
+    margin: 0;
+    padding: 0 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    text-align: center;
+    background-color: rgb(209, 19, 19);
+    height: 80px;
+    font-weight: bold;
+    color: black;
+}
+
+/* .daheader .lefty {
+    float: left;
+    margin: auto 5px;
+}
+
+.daheader .righty {
+    float: right;
+    margin: auto 5px;
+} */
+
+.daheader div {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.daheader div a {
+    color: black;
+    text-decoration: none;
+}
+.daheader div a:hover {
+    color: white;
+}
+.daheader .lefty {
+    justify-content: left;
+}
+.daheader .centery {
+    justify-content: center;
+}
+.daheader .righty {
+    justify-content: right;
+}
+
+/* .daheader div a {
+    padding-right:0;
+} */
+
+.daheader a.title {
+    font-family: olifont, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    height: min-content;
+    color: white;
+}
+
+.daheader a.title:hover {
+    color: black;
+}
+
+.dasubheader {
+    margin: 0;
+    padding: 0 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    font-weight: bold;
+    color: black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.dasubheader div {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+}
+.dasubheader div a {
+    color: black;
+    text-decoration: none;
+}
+.dasubheader div a:hover {
+    color: white;
+}
+
+.dasubheader h3 {
+    font-family: olifont, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    height: min-content;
+    color: white;
+    text-align: center;
+}
+
+.daboxer1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 60px 200px;
+    color: white;
+    justify-content: center;
+    gap: 10%;
+}
+
+.daboxer1 a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+}
+
+.daboxer1 .song-box {
+    text-align: center;
+    height: fit-content;
+    background-color: rgb(209, 19, 19);
+    transition-duration: 100ms;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.daboxer1 .song-box:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.daboxer1 .song-box img {
+    width: 100%;
+    margin: 0;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.daboxer1 .song-box h3 {
+    margin: 25px auto;
+    text-align: center;
+    font-size: 40px;
+}
+
+.message-boxten {
+    text-align: center;
+    color: white;
+    padding-bottom: 60px;
+    font-size: 20px;
+}
+
+.message-boxten input {
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.message-boxten button {
+    width: 60px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.dasongcover {
+    width: 30%;
+    margin: 60px auto;
+    background-color: rgb(209, 19, 19);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.dasongcover img {
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.dasongcover h3 {
+    margin: 25px auto;
+    text-align: center;
+    font-size: 40px;
+    display: block;
+    color: white;
+}
+
+.streamingbuttons {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    margin-bottom: 60px;
+    gap: 20px;
+}
+.streamingbuttons a {
+    padding: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition-duration: 100ms;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.streamingbuttons a img {
+    height: 100%;
+}
+.streamingbuttons span {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+.streamingbuttons a#spotify {
+    background-color: #1DB954;
+}
+.streamingbuttons a#apple {
+    background-color: #FF4E6B;
+}
+.streamingbuttons a#youtube {
+    background-color: #FF0000;
+}
+
+.streamingbuttons a:hover{
+    transform: scale(1.05);
+}
+
+.lyrics {
+    color: white;
+    width: 30%;
+    margin: auto;
+}
+.lyrics h3 {
+    text-align: center;
+}
+.lyrics p {
+    text-wrap: wrap;
+    width: 100%;
+    line-height: 40px;
+}
+
+@media screen and (max-width: 800px) {
+    .streamingbuttons {
+        width: 90%;
+    }
+    .dasongcover {
+        width: 90%;
+    }
+    .lyrics {
+        width: 90%;
+    }
+    .daboxer1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+        /* margin: 0; */
+        padding: 60px 0;
+    }
+    .daboxer1 .song-box {
+        width: 90%;
+    }
+    /* .daboxer1 .song-box img {
+        width: auto;
+        height: 300px;
+    } */
+}
