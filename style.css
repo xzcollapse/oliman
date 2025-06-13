@@ -25,6 +25,7 @@ body {
     height: 80px;
     font-weight: bold;
     color: black;
+    /* position:fixed; */
 }
 
 /* .daheader .lefty {
@@ -247,6 +248,13 @@ body {
 }
 .streamingbuttons a#youtube {
     background-color: #FF0000;
+}
+.streamingbuttons a#vinyl {
+    background-color: white;
+}
+.streamingbuttons a#vinyl span {
+    color: black;
+    font-size: 20px;
 }
 
 .streamingbuttons a:hover{
