@@ -148,7 +148,7 @@ body {
     background-color: rgb(209, 19, 19);
     transition-duration: 100ms;
     border-radius: 10px;
-    width: 40%;
+    width: 40vw;
 }
 
 .daboxer1 .song-box:hover {
