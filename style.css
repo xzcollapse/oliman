@@ -134,6 +134,7 @@ body {
     color: white;
     justify-content: center;
     gap: 10%;
+    flex-wrap: wrap;
 }
 
 .daboxer1 a {
